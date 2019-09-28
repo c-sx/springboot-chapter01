@@ -13,8 +13,10 @@ public class SpringbootDemoApplication {
         SpringApplication.run(SpringbootDemoApplication.class, args);
     }
 
+/*
     @RequestMapping
     public String hello() {
         return "register";
     }
+*/
 }
