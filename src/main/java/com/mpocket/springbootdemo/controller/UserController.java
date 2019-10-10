@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 
 /**
@@ -24,5 +25,17 @@ public class UserController {
         model.addAttribute("user", user);
         // 返回一个字符串 " success" 作为视图名称
         return "success";
+    }
+
+    @RequestMapping("/test")
+    public String test() {
+        return "test";
+    }
+
+    @RequestMapping("/index")
+    public ModelAndView index() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("register");
+        return modelAndView;
     }
 }

@@ -7,7 +7,7 @@
     <!--Bootstrap-->
     <link th:href="@{/bootstrap-3.3.7-dist/css/bootstrap.min.css}" rel="stylesheet">
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <script th:src="@{/jquery.min.js}"></script>
+    <script th:src="@{/jquery-3.4.1.min.js}"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script th:src="@{/bootstrap-3.3.7-dist/js/bootstrap.min.js}"></script>
 
@@ -26,6 +26,18 @@
     <tr>
         <td>age:</td>
         <td th:text="${user.age}"></td>
+    </tr>
+    <tr>
+        <td>grade:</td>
+        <td th:text="${user.grade}"></td>
+    </tr>
+    <tr>
+        <td>email:</td>
+        <td th:text="${user.email}"></td>
+    </tr>
+    <tr>
+        <td>teleNum:</td>
+        <td th:text="${user.teleNum}"></td>
     </tr>
 </table>
 </body>
