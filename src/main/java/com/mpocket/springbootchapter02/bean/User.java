@@ -1,4 +1,4 @@
-package com.mpocket.springbootdemo.bean;
+package com.mpocket.springbootchapter02.bean;
 
 import java.io.Serializable;
 

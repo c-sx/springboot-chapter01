@@ -1,8 +1,7 @@
-package com.mpocket.springbootdemo;
+package com.mpocket.springbootchapter02;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController

@@ -1,4 +1,4 @@
-package com.mpocket.springbootdemo;
+package com.mpocket.springbootchapter02;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

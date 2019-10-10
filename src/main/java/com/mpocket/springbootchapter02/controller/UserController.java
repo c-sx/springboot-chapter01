@@ -1,6 +1,6 @@
-package com.mpocket.springbootdemo.controller;
+package com.mpocket.springbootchapter02.controller;
 
-import com.mpocket.springbootdemo.bean.User;
+import com.mpocket.springbootchapter02.bean.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;

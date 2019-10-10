@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mpocket</groupId>
-    <artifactId>springboot-demo</artifactId>
+    <artifactId>springboot-chapter02</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-demo</name>
+    <name>springboot-chapter02</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
