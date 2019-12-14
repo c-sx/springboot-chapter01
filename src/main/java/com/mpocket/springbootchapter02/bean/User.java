@@ -1,5 +1,6 @@
 package com.mpocket.springbootchapter02.bean;
 
+import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 
 public class User implements Serializable {
@@ -9,11 +10,22 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
     private Integer id;
+
+    @Pattern(regexp = "(^[a-zA-Z0-9_-]{4,16}$)", message = "请输入4-16位字母或数字")
     private String username;
+
+    @Pattern(regexp = "(^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,14}$)", message = "请输入6-14位字母或数字")
     private String password;
-    private Integer age;
+
+    @Pattern(regexp = "(^(?:[1-9][0-9]?|1[01][0-9]|120)$)", message = "请输入小于120数字")
+    private String age;
+
     private Grade grade;
+
+    @Pattern(regexp = "(^([A-Za-z0-9_\\-.])+@([A-Za-z0-9_\\-.])+\\.([A-Za-z]{2,4})$)", message = "请输入正确邮箱格式")
     private String email;
+
+    @Pattern(regexp = "(^[1]([3-9])[0-9]{9}$)", message = "请输入正确电话号码")
     private String teleNum;
 
 
@@ -65,11 +77,11 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public Integer getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(String age) {
         this.age = age;
     }
 }
